@@ -21,7 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'chmod +x ./deployment/deploy_prod.sh'
+                // sh 'chmod +x ./deployment/deploy_prod.sh'
                 sh './deployment/deploy_prod.sh'
             }
         }
